@@ -1,2 +1,2 @@
-# Porfolio-0.5
+# Portfolio-0.5
 Portfolio website
