@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Karthik Shetty Portfolio</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="picture/logomxcv.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="css/Main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+
+<body>
+
+    <!-- <div class="pre_loader_div"> </div> -->
+
+    <nav class="navbar">
+        <div class="navbar_div">
+            <div class="logo">Portfolio</div>
+
+            <ul class="nav_content">
+                <li><a href="#home_id">Home</a></li>
+                <li><a href="#about_me_id">About</a></li>
+                <li><a href="#projects_id">Project</a></li>
+                <li><a href="#contact_id">Contact</a></li>
+            </ul>
+
+            <div class="nav_btn"><i class="fas fa-hamburger"></i></div>
+        </div>
+    </nav>
+
+    <section class="home" id="home_id">
+        <div class="home_content_div">
+            <div class="home_content_hold">
+                <h1>I'm <br> Karthik <span>Shetty</span></h1>
+                <h5 class="intro_line_three">And i'm a <span class="i_am"></span></h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="about_me" id="about_me_id">
+
+        <div class="about_me_hold">
+
+            <div class="about_me_img">
+                <img src="picture/About_me_profile.jpg" alt="About Me">
+            </div>
+
+            <div class="about_me_content">
+
+                <h4>Short note on me!</h4>
+
+                <div class="about_me_img_small">
+                    <img src="picture/about-me-small-no-back.png" alt="About me">
+                </div>
+
+                <p>I'am Karthik shetty, <span>From, Karnataka, India</span>. I'm a Computer science engineering
+                    student
+                    at Sahyadri college of engineering and management <span>Adyar, Mangaluru, Karnataka</span>.</p>
+
+                <div class="social_links_pc">
+
+                    <div class="social_links">
+                        <ul class="social_links_ul">
+                            <li class="social_links_li"> <a href="https://linkedin.com/in/karthik2000" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i> </a> </li>
+                            <li class="social_links_li"> <a href="https://github.com/karthik-lezer" target="_blank">
+                                    <i class="fab fa-github"></i> </a> </li>
+                            <li class="social_links_li"> <a href="https://www.instagram.com/lezer.26/" target="_blank">
+                                    <i class="fab fa-instagram"></i> </a> </li>
+                            <li class="social_links_li"> <a href="mailto:karthikkanyana26@gmail.com" target="_blank"> <i
+                                        class="fas fa-envelope"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume_hold">
+                    <div class="resume">
+                        <a href="#">
+                            <h5>My Resume ></h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about_me_extra"></div>
+
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects_id">
+
+        <div class="project_hold">
+
+            <div class="project_head">
+                <h4>Projects</h4>
+            </div>
+
+            <div class="project_body">
+
+                <a href="projects/WebDev.html">
+
+                    <div class="project_one project_item">
+
+                        <div class="project_item_img">
+
+                            <h4>Web Development</h4>
+
+                        </div>
+
+                        <div class="project_link">
+                            <h5>More ></h5>
+                        </div>
+
+                        <p>I have worked on a few web-based projects, Using HTML, CSS3, JavaScript, and other related technologies.</p>
+                    </div>
+                </a>
+
+                <a href="www.google.com">
+
+                    <div class="project_two project_item">
+
+                        <div class="project_item_img">
+
+                            <h4>Android Projects</h4>
+                        </div>
+
+                        <div class="project_link">
+                            <h5>More ></h5>
+                        </div>
+
+                        <p>Not much to show, but I did a few simple android applications using Android Studio.</p>
+                    </div>
+                </a>
+
+                <a href="www.google.com">
+
+                    <div class="project_three project_item">
+
+                        <div class="project_item_img">
+
+                            <h4>Academic Projects</h4>
+                        </div>
+
+                        <div class="project_link">
+                            <h5>More ></h5>
+                        </div>
+
+                        <p>Here you can see all my college projects, which I have done in the 3.5 years.</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact_me" id="contact_id">
+        <div class="contact_hold">
+
+            <form action="contact/contact.php" method="post">
+                <h3>Let's talk</h3>
+
+                <div class="contact_value c_name">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" autocomplete="off" required>
+                </div>
+
+                <div class="contact_value c_email">
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" name="email" autocomplete="off" required>
+                </div>
+
+                <div class="contact_value c_phone">
+                    <label for="phone">Message Subject</label>
+                    <input type="text" id="subject" name="subject" autocomplete="off" required>
+                </div>
+
+                <div class="contact_value c_message">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" autocomplete="off" required></textarea>
+                </div>
+
+                <input id="submit" type="submit" value="Send">
+
+            </form>
+
+            <div class="contact_hold_extra" style="background-image: url('./picture/contact-extra.png');">
+                <ul>
+                    <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/lezer.26/"
+                            target="_blank">&nbsp; lezer.26</a> </li>
+                    <li> <i class="fab fa-snapchat-ghost"></i> <a
+                            href="https://www.snapchat.com/add/kshetty21296?share_id=nPGclfJGIgE&locale=en-GB"
+                            target="_blank">&nbsp; kshetty21296</a> </li>
+                    <li> <i class="fab fa-linkedin-in"></i> <a href="https://linkedin.com/in/karthik2000"
+                            target="_blank">&nbsp; karthik2000</a> </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_div">
+            <h4>©Karthik Shetty | 2020 - 2022</h4>
+        </div>
+    </footer>
+
+    <script src="JSLink/Main.js"></script>
+
+</body>
+
+</html>

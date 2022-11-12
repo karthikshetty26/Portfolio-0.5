@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+//'Niconne', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+//'Courier Prime', monospace;
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+//'Cutive Mono', monospace;
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+//'Fuzzy Bubbles', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+//'Cormorant Garamond', serif;
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+//'Crimson Pro', serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+//font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+//font-family: 'Lato', sans-serif;
+
+$fs-primary: 'Lato', sans-serif;
+// $fs-handwriting: 'Niconne', sans-serif;
+
+//headings
+
+h1 {
+    font-family: $fs-primary;
+    font-size: clamp(1.7rem, 13vw, 6rem);
+    padding: 10px 0px;
+    transition: all 0.5s ease;
+}
+
+h2 {
+    font-family: $fs-primary;
+    font-size: clamp(1.4rem, 10vw, 4.8rem);
+    padding: 10px 0px;
+    transition: all 0.5s ease;
+}
+
+h3 {
+    font-family: $fs-primary;
+    font-size: clamp(1.2rem, 8vw, 3.9rem);
+    padding: 10px 0px;
+    transition: all 0.5s ease;
+}
+
+h4 {
+    font-family: $fs-primary;
+    font-size: clamp(1rem, 6vw, 2.7rem);
+    padding: 10px 0px;
+    transition: all 0.5s ease;
+}
+
+h5 {
+    font-family: $fs-primary;
+    font-size: clamp(0.8rem, 4vw, 2rem);
+    padding: 10px 0px;
+    transition: all 0.5s ease;
+}

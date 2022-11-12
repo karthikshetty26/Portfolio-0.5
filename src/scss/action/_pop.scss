@@ -1,0 +1,93 @@
+@use '../assets' as *;
+
+.pop_up {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(216, 191, 216, 0.514);
+    font-family: $fs-primary;
+
+    .pop_up_content {
+        max-width: 400px;
+        padding: max(2%, 20px);
+        border-radius: 0.9rem;
+        background-color: $color-white;
+
+        .pop_up_head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                left: 0;
+                font-size: clamp(0.8rem, 4.5vw, 1.2rem);
+            }
+
+            i {
+                right: 0;
+                margin-left: 30px;
+                font-size: clamp(0.8rem, 4.5vw, 1.2rem);
+            }
+        }
+
+        .pop_up_link {
+            display: flex;
+            align-items: center;
+
+            ul {
+                display: block;
+                padding: 25px 0px 0px 0px;
+
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    font-size: 2rem;
+                    padding: 10px 18px;
+                    margin: 0rem 1rem;
+                    border-radius: 2rem;
+                    background-color: rgb(219, 219, 219);
+
+                    i {
+                        color: $color-red;
+                        transition: all 0.9s ease;
+
+                        &:hover {
+                            color: $color-gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pop_up.active {
+    display: flex;
+}
+
+@media (max-width: 500px) {
+    .pop_up {
+        .pop_up_content {
+            .pop_up_link {
+                ul {
+                    li {
+                        display: inline-block;
+                        list-style: none;
+                        font-size: 1.5rem;
+                        padding: 10px 15px;
+                        margin: 0rem 1rem;
+                        border-radius: 2rem;
+                        background-color: rgb(219, 219, 219);
+                    }
+                }
+
+            }
+
+        }
+    }
+}

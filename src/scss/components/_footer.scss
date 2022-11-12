@@ -1,0 +1,18 @@
+@use "../assets" as *;
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: $color-white;
+
+    .footer_div {
+        margin: auto;
+        padding: 20px 0px 10px 0px;
+
+        h4 {
+            font-family: $fs-primary;
+            font-size: clamp(0.9rem, 5vw, 1.2rem);
+        }
+    }
+}

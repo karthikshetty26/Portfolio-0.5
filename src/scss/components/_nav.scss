@@ -1,0 +1,125 @@
+@use "../assets" as *;
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px 0px;
+    font-family: $fs-primary;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+
+    .navbar_div {
+        position: relative;
+        width: min(1500px, 98%);
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            color: $color-black;
+            font-size: clamp(1.5rem, 9vw, 2rem);
+            z-index: 999;
+            transition: all 0.5s ease;
+        }
+
+        .nav_content {
+            li {
+                list-style: none;
+                display: inline-block;
+                margin-left: 20px;
+
+                a {
+                    font-size: 1.5rem;
+                    color: $color-gray;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        font-size: 1.6rem;
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+
+        .nav_btn {
+            display: none;
+
+            i {
+                color: $color-gray;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.navbar.add {
+    background-color: $color-yellow-white-dark;
+    padding: 10px 0px;
+
+    .navbar_div {
+        .logo {
+            font-size: clamp(1.5rem, 9vw, 1.8rem);
+        }
+
+        .nav_content {
+            li {
+                a {
+                    font-size: 1.3rem;
+
+                    &:hover {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:930px) {
+    .navbar{
+        .navbar_div {
+            padding: 0% 2%;
+
+            .nav_content {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                padding: 30px 0px 0px 0px;
+                left: -100%;
+                top: 0;
+                // opacity: 100%;
+                background-color: $color-white;
+                align-items: center;
+                justify-content: center;
+                // z-index: 998;
+                transition: all 0.3s ease;
+
+                li {
+                    margin: 10px;
+                    font-size: 1.8rem;
+                    text-align: center;
+                }
+            }
+
+            .nav_content.active {
+                left: 0;
+            }
+
+            .nav_btn {
+                display: block;
+                z-index: 999;
+
+                i.active:before {
+                    content: "\f818";
+                }
+            }
+        }
+    }
+}

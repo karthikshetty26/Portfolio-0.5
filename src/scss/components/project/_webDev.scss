@@ -1,0 +1,48 @@
+@use "../../assets" as *;
+
+.web_dev {
+    display: flex;
+    width: 100%;
+    margin-top: 150px;
+    // align-items: center;
+    justify-content: center;
+
+    .web_dev_hold {
+        width: min(1650px, 100%);
+        padding: 1% 1.5% 1% 2%;
+
+        .web_dev_head {
+            width: 100%;
+            padding: 1% 1.5% 1% 2%;
+
+            h2 {
+                color: $color-red;
+            }
+
+        }
+
+        .web_dev_content {
+            width: 100%;
+            padding: 1% 1.5% 1% 2%;
+
+            ul {
+                li {
+                    list-style: none;
+                    padding: 10px 0px;
+
+                    a {
+                        color: $color-black;
+                    }
+
+                    p {
+                        // opacity: 0.6;
+                        color: $color-gray;
+                        strong {
+                            color: $color-red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

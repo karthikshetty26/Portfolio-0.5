@@ -1,0 +1,68 @@
+@use "../assets"as *;
+
+.home {
+    width: 100%;
+
+    .home_content_div {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+
+        .home_content_hold {
+            width: 100%;
+            text-align: center;
+            color: $color-gray;
+            font-family: $fs-primary;
+
+            h1 {
+                width: 100%;
+                padding: 0px 15px !important;
+
+                br {
+                    display: none;
+                }
+
+                span {
+                    font-weight: 300;
+                }
+            }
+
+            h5 {
+                width: 100%;
+                padding: 0px 15px !important;
+            }
+
+            .intro_line_three {
+
+                .i_am {
+                    color: $color-red;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:670px) {
+
+    .home {
+        .home_content_div {
+            .home_content_hold {
+                text-align: left;
+                padding-left: 2rem;
+
+                h1{
+                    padding: 0px !important;
+
+                    br {
+                        display: block;
+                    }
+                }
+
+                h5{
+                    padding: 0px !important;
+                }
+            }
+        }
+    }
+}
